@@ -1,14 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body .as{
     background-color: rgba(128, 128, 128, 0.11);
 }
-.container{
-    justify-content: space-evenly;
-}
+
 li{
     list-style-type: none;
 }
@@ -16,12 +15,40 @@ li{
 .purple{
     background-color:rgba(132, 95, 192, 0.692);
 }
-.slide{
-    display: flex;
+
+.fix{
+    clear: both;
 }
-.section{
-    padding-right: 10px;
+.bc{
+    color: black;
 }
+.p4{
+    padding-top: 4px;
+}
+.p8{
+    padding-top: 8px;
+}
+.p10{
+    padding-top: 14px;
+}
+.ali-cent{
+    align-items: center;
+}
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: all 1.5s ease;
+}
+.inner:hover img{
+    transform: scale(1.5);
+}
+
+
+.clear{
+    clear: both;
+}
+
 .bc{
     color: black;
 }
@@ -32,9 +59,20 @@ li{
 .pt{
     font-size: 10px;
 }
+.pm{
+   font-size: 10px;
+   font-weight: bold;
+}
+.text-align-center{
+    text-align: center;
+}
+a:hover{
+    color: rgb(174, 223, 59);
+}
 .pb{
     font-size: 15px;
 }
+
 .ht{
     font-size: 12px;
     color: red;
@@ -49,6 +87,10 @@ li{
 .ta{
     text-align: center;
 }
+.slide-row{
+height: 100%;
+}
+
 .l1{
     
     width: 90px;
@@ -91,5 +133,45 @@ li, li a{
   text-align: center;
 }
 
+a{
+    color: darkblue;
+}
+.btf{
+    font-size: 10px;
+}
+.hd{
+   font-size: 12px;
+   font-weight: bolder;
+}
+.cad{
+    background-color: darkcyan;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.ft{
+    display: flex;
+    height: 300px;
+}
+.pt1{
+    width: 30%;
+}
+.pt2{
+    width: 70%;
+}
+.ovt{
+    height: calc(100% - 15px);
+    margin-bottom: 15px;
+}
 
-
+@media(max-width:800px){
+    .links-inner{
+        display: grid;
+        grid-template-columns:auto ;
+        align-items: center;
+    }
+   .hd{
+       text-decoration: underline;
+       font-size: 20px;
+   }
+}
